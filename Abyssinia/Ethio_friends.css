@@ -2,7 +2,7 @@
 body {
   font-family: sans-serif;
   background-color: #315481;
-  background-image: linear-gradient(to bottom, green, yellow,red 120%);
+  background-image: linear-gradient(to top, green, yellow,red 120%);
     background-attachment: fixed;
 
   position: absolute;
@@ -18,21 +18,27 @@ body {
 }
 
 .container {
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 50%;
+  margin: -10 auto;
   min-height: 100%;
-  background: white;
+  background: linear-gradient(to top, green, yellow,red 120%);
+
 }
 
 header {
   background: #d2edf4;
-  background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
+    background-image: url("src/ethiopian_wolf.jpg");
+
+;
   padding: 20px 15px 15px 15px;
   position: relative;
+  left: 50px;
+  height: 300px;
+  width: 60%;
 }
 
 #login-buttons {
-  display: block;
+  display: inline;
 }
 
 h1 {
@@ -83,7 +89,12 @@ li {
   list-style: none;
   padding: 15px;
   border-bottom: #eee solid 1px;
+    display: inline;
+    left: -0px;
+    color: gray;
+
 }
+
 
 li .text {
   margin-left: 10px;
@@ -122,5 +133,11 @@ header .hide-completed {
 
   .new-task input {
     padding-bottom: 5px;
+  }
+
+  .nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
 }
